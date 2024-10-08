@@ -21,16 +21,3 @@ For a quick analysis to answer a business question, I look for as many insights 
     Execute: present the insights / data product to internal customers, get feedback, and make any changes if necessary
   </li>
 </ul>
-
-## My thoughts on data warehouse architecture and governance (so far...)
-<ul>
-  <li>
-    No NULLs: requiring an absence of nulls means that there are no problems with comparison operators or math functions.  Null = NUll returns neither true or false.
-  </li>
-  <li>
-    Make tables as narrow as possible: This is mainly a source data entity problem, but tables should only contain as many columns as are necessary.  For example, If you details table contains the dimension data also found in the header table, like addresses, then don't include it in the line table too.
-  </li>
-  <li>
-    MD5 or greater hashed primary and foreign keys: These primary and foreign keys should almost always be surrogate keys, and MD5 is faster than text for joining on, and has the added benefit of obfuscating the surrogate key elements for end-users.  Before you say it, collision is a possibility for MD5, but the chance is so incredibly small it is not likely to occur in most siutations.  MD5 is 128-bit, meaning there is a 50% chance of collision after <a href = "https://en.wikipedia.org/wiki/Birthday_problem#:~:text=%C3%971019-,2.2%C3%971019,-3.1%C3%9710"> 2.2x10<sup>19</sup> </a> hash values, or <a href = "https://preshing.com/20110504/hash-collision-probabilities/#:~:text=64%2Dbit%20or-,160%2Dbit,-%2C%20the%20following%20table">1.42x10<sup>24</sup></a> for SHA1.
-  </li>
-</ul>
