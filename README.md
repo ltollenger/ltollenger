@@ -1,23 +1,20 @@
 # An Introduction to me
 
-Hello, I'm Liam.  As a data analyst, I mostly create dashboards that increase the business capabilities of internal customers by given them insights into the data they previously didn't have access to.  
-
-Other things I have done: created API data connections to external sources; designed a data governance strategy for a data warehouse that requires standardized naming of columns across production database tables, documentation for all production database objects, and code ownership and change logging; and built a data warehouse following that data governance strategy.
+Hello, I'm Liam.  As a data analyst, I create dashboards that increase the business capabilities of internal customers by providing them greater visibility into data.  In addition to report building: I implement API data connections with python and Azure Function apps to send JSON from and receive JSON into our data warehouse; design data governance policies for the data warehouse, for example requiring standardized column names across production database tables; and write wiki documentation and changelogs for all production database objects.
 
 ## My process for data analysis / making data products
-For data analytics, I follow iterative P.A.C.E. project lifecycle:
+For data analytics, I follow the iterative P.A.C.E. project lifecycle:
 <ul>
   <li>
-    Plan: gather project requirements.  Talk with internal customers of project deliverables about the motivations behind the project, the "Why" that drove the internal customer(s) to request a report to be  made.
+    Plan: gather project requirements.  Closely collaborate with internal customers to understand their business needs and the motiviations behind the project ask.  When you understand the "Why" behind a project request, you can implement better solutions.
   </li>
   <li>
-    Analysis: conduct exploratory data analysis.  For data products, this means using my knowledge of the busienss to find the data needed for the outlined business capabilities in the project requirments. 
-For a quick analysis to answer a business question, I look for as many insights as are relevant to the requested information.
+    Analysis: conduct exploratory data analysis.  For data products, this means using my knowledge of the business, or connecting with other subject matter experts, to find the data that can support the business capabilities outlined in the project requirments.
   </li>
   <li>
-    Construct: finalize the viualizations of the data product, or pair down insights to a valuable few.
-</il>
+    Construct: finalize data products<span>&#8212;</span>data models, reports, and visualizations<span>&#8212;</span>and pair down insights to a valuable few.
+  </il>
   <li>
-    Execute: present the insights / data product to internal customers, get feedback, and make any changes if necessary
+    Execute: present the insight(s) and data product(s) to internal customers, get feedback, and adapt the deliverable to evolving requirements if needed.
   </li>
 </ul>
